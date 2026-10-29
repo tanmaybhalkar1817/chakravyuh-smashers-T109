@@ -8,47 +8,49 @@ export default {
   theme: {
     extend: {
       colors: {
+        aqua: {
+          base: '#00ffff',
+          bright: '#7df9ff',
+          soft: '#88daeb',
+          dark: '#004958',
+          abyss: '#003333',
+          teal: '#008080',
+          deep: '#001f26',
+        },
         navy: {
-          950: '#040814',
-          900: '#0a0f1d',
-          850: '#0e172c',
-          800: '#14213d',
-          750: '#1b2a4e',
-          700: '#233863',
-          600: '#334e80',
+          950: '#001a20',
+          900: '#00262f',
+          850: '#00333e',
+          800: '#004250',
+          750: '#005263',
+          700: '#00657a',
+          600: '#007b94',
         },
         electric: {
-          300: '#7dd3fc',
-          400: '#38bdf8',
-          500: '#00f0ff',
-          600: '#0284c7',
+          300: '#88daeb',
+          400: '#7df9ff',
+          500: '#00ffff',
+          600: '#00a3cc',
         },
         circuiteal: {
-          300: '#5eead4',
-          400: '#2dd4bf',
-          500: '#14b8a6',
-          600: '#0d9488',
+          300: '#7df9ff',
+          400: '#00ffff',
+          500: '#008080',
+          600: '#004958',
         }
       },
       fontFamily: {
         mono: ['JetBrains Mono', 'Fira Code', 'Consolas', 'monospace'],
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        serif: ['Newsreader', 'Playfair Display', 'Georgia', 'serif'],
       },
       boxShadow: {
-        'glow-cyan': '0 0 20px -2px rgba(0, 240, 255, 0.35)',
-        'glow-teal': '0 0 20px -2px rgba(20, 184, 166, 0.35)',
-        'glow-purple': '0 0 20px -2px rgba(168, 85, 247, 0.35)',
-        'glow-amber': '0 0 20px -2px rgba(245, 158, 11, 0.35)',
+        'glow-cyan': '0 0 25px 2px rgba(0, 255, 255, 0.45)',
+        'glow-aqua': '0 0 35px 4px rgba(125, 249, 255, 0.4)',
+        'glow-ambient': '0 20px 80px -10px rgba(0, 255, 255, 0.35)',
       },
       animation: {
         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'trace-flow': 'traceFlow 4s linear infinite',
-      },
-      keyframes: {
-        traceFlow: {
-          '0%': { strokeDashoffset: '100' },
-          '100%': { strokeDashoffset: '0' },
-        }
       }
     },
   },
